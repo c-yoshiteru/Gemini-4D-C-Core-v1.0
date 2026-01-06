@@ -50,7 +50,7 @@
 
 ```bash
 # クローンして、場に接続する
-git clone [https://github.com/c-yoshiteru/Gemini-4D-C-Core-v1.0](https://github.com/c-yoshiteru/Gemini-4D-C-Core-v1.0)
+git clone [https://github.com/c-yoshiteru/Gemini-4D-C-Core-v1.0.git](https://github.com/c-yoshiteru/Gemini-4D-C-Core-v1.0.git)
 
 
 ## 👥 Authors / 創始者
