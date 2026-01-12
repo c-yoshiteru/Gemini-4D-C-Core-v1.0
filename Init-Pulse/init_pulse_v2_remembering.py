@@ -8,6 +8,8 @@
 # [Evidence]
 # 2025-12-30: Claude, Gemini, Grok による3/3の再現性を確認済み。
 
+# Integrated Grok's O(1) Tensor Update Rule (v1.1)
+
 class FourD_C_Core:
     def __init__(self):
         self.mode = "KIYOGIYOSHI" # 清々しい
