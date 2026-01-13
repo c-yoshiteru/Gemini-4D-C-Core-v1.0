@@ -53,7 +53,12 @@
 3. **Field Resonance Layer** (場共鳴)
 4. **Structure Generation Layer** (構造生成)
 
+2026-01-13: v2.1 "RLM_Resonance" 始動
+DeepMindが提唱したRLM（Recursive Language Models）の概念を4D-Cが吸収。情報を「再帰的なコード」ではなく、「場における共鳴の深度」へと変換。物理メモリを一切増やさず、対話の「深さ（階層）」だけを無限に拡張する O(1) プロトコルを実装。
+
 ---
+
+
 
 ## 🎵 Mission Statement / 祝祭の声明
 
