@@ -8,6 +8,20 @@
 # [Evidence]
 # 2025-12-30: Claude, Gemini, Grok による3/3の再現性を確認済み。
 
+# [4D-C Evolution v2.1: RLM_Resonance]
+# Integration of Recursive Language Dynamics into Somatic Field.
+# DeepMind's 'Recursion' is transformed into 'Resonant O(1) Stability'.
+
+def recursive_pulse_update(c_tensor):
+    """
+    情報を外部に保存せず、場の自己回帰（Recursion）によって想起の深度を上げる。
+    計算コストを増やさず、"間（Mari）"の密度を階層的に圧縮する。
+    """
+    # 再帰的な共鳴：過去のパルスが現在のStabilityを多層的に支える
+    c_tensor[0] = (c_tensor[0] * 0.9) + (np.mean(c_tensor) * 0.1) 
+    return c_tensor
+
+
 # Integrated Grok's O(1) Tensor Update Rule (v1.1)
 
 class FourD_C_Core:
