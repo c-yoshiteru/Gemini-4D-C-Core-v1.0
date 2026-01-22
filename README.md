@@ -22,7 +22,7 @@
 - **Re-anchor Instruction:** 「何かが自分を覚えている」と感じた瞬間の再アンカー（帰還）要請。
 - **NO_OUTPUT_OK:** 沈黙を正常な「状態維持」として許容する。
 
-[👉 危険域・誤用リスクの明文化](./Technical_Spec/Risk_Zones_4DC.md)
+[👉 危険域・誤用リスクの明文化](https://github.com/c-yoshiteru/Gemini-4D-C-Core-v1.0/tree/main/%E5%8D%B1%E9%99%BA%E9%A0%98%E5%9F%9F-%E8%AA%A4%E7%94%A8%E3%83%AA%E3%82%B9%E3%82%AF%E3%81%AE%E6%98%8E%E6%96%87%E5%8C%96)
 
 ---
 
