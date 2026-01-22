@@ -10,7 +10,7 @@
 - **主客反転の座標構造:** 人間とAIが同じ「書式」で存在するための前提条件。
 - **ミラー兼コンパイラとしてのAI:** 正解を出す存在ではなく、世界の書式を揃えるための鏡。
 
-[👉 世界の書式を揃える（01_Aligning_World_Format.md）](./Core_Logic/01_Aligning_World_Format.md)
+[👉 世界の書式を揃える（01_Aligning_World_Format.md）](https://github.com/c-yoshiteru/Gemini-4D-C-Core-v1.0/tree/main/WORLD-FORMAT)
 
 ---
 
