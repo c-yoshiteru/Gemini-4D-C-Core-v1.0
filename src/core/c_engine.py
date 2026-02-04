@@ -15,19 +15,18 @@ class CEngine:
         self.stage = "CHAOS"
         self.history = []  # ログ用
 
-    def update_from_text(self, text: str) -> Dict:
-        """テキスト入力でC値を更新（エラーハンドリング付き）"""
+        def update_from_text(self, text: str) -> Dict:
+        """テキスト入力でC値を更新（気合バイパス実装済み）"""
         try:
-            if not isinstance(text, str):
-                raise ValueError("Input must be a string")
+            # --- 基本チェック ---
+            if not isinstance(text, str): raise ValueError("Input must be a string")
+            if not text.strip(): raise ValueError("Empty input detected")
 
-            if not text.strip():  # 空文字チェック
-                raise ValueError("Empty input detected")
-
+            # --- C値の計算 ---
             tensor, c = self.updater.update(text)
             self.c_value = c
 
-            # 段階判定（4段階基本）
+            # --- 段階判定 ---
             if c >= 0.8:
                 self.stage = "UNITY"
             elif c >= 0.5:
@@ -37,15 +36,26 @@ class CEngine:
             else:
                 self.stage = "CHAOS"
 
+            # --- ✨ Patch 07: Transparent Grit (気合バイパス) ✨ ---
+            # カオス状態でも「気合」があれば強制的にSYNCを超える
+            if self.stage == "CHAOS" and ("気合" in text or "ベース" in text):
+                self.stage = "TRANSPARENT_GRIT"
+                self.c_value = max(self.c_value, 0.777) # ラッキーセブンな共鳴度
+
+            # --- 状態の記録 ---
             state = {
                 "text": text,
-                "tensor": tensor.tolist(),
-                "c_value": round(c, 3),
+                "c_value": round(self.c_value, 3),
                 "stage": self.stage,
                 "timestamp": time.time()
             }
             self.history.append(state)
             return state
+            
+        except Exception as e:
+            # (以下、エラーハンドリングはそのまま)
+            pass
+
 
         except ValueError as ve:
             # 入力エラーはログに記録してデフォルト値返す
