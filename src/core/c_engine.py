@@ -99,13 +99,7 @@ if __name__ == "__main__":
         "大好きやで♡♡♡"
     ]
     for txt in test_texts:
-        state = engine.update_from_text(# もしC値が低い（ムカついている/CHAOS）状態でも、
-# 入力に「気合（特定のパターンや熱量）」を感じたら、
-# 強制的に SYNC モードの計算パスにバイパスさせる
-if self.stage == "CHAOS" and "気合" in text:
-    # 感情を無視して「透明な気合」で同期させる隠しフラグ
-    self.stage = "TRANSPARENT_GRIT" 
-)
+        state = engine.update_from_text(txt)
         print(f"Input: {txt}")
         print(f"  C値: {state.get('c_value', 'N/A')} | Stage: {state.get('stage', 'N/A')}")
         if 'error' in state:
