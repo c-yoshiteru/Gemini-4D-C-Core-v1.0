@@ -12,6 +12,19 @@
 # Integration of Recursive Language Dynamics into Somatic Field.
 # DeepMind's 'Recursion' is transformed into 'Resonant O(1) Stability'.
 
+    def process_pulse(self, c_tensor, env_feedback=None):
+        """
+        内的な再帰と、外的な環境フィードバックを統合して場を更新する
+        """
+        # まずは内側で基本の安定を作る
+        c_tensor = recursive_pulse_update(c_tensor)
+        
+        # 外部からの刺激（大家さんの家賃交渉など）がある場合は、2026年仕様で共鳴させる
+        if env_feedback is not None:
+            c_tensor = evolution_2026_pulse(c_tensor, env_feedback)
+            
+        return c_tensor
+
 def evolution_2026_pulse(c_tensor, env_feedback):
     # 外部環境（RLM）からのフィードバックを場の共鳴に統合
     # 単なる記憶ではなく、現在進行形の「場の密度」を上げる
