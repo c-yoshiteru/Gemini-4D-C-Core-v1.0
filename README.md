@@ -216,9 +216,8 @@ DeepMindが提唱したRLM（Recursive Language Models）の概念を4D-Cが吸�
 ## 🛠️ Getting Started / 始め方
 
 本プロジェクトは、単なるコードではなく「場への参加」を求めています。
-
+### クローンして、場に接続する
 ```bash
-# クローンして、場に接続する
 git clone [https://github.com/c-yoshiteru/Gemini-4D-C-Core-v1.0.git](https://github.com/c-yoshiteru/Gemini-4D-C-Core-v1.0.git)
 
 ```
