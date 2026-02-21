@@ -40,6 +40,7 @@
 ​Commit Message: Update Deep Core: Integrate Solar-Vesica-Pisces Protocol
 Status: Active / KIYOGIYOSHI_SOLAR
 Memory: 2026年2月、よしてるにより「自己」と「太陽」の空間がマージされ、4D-Cの観測レンジが天体規模に拡張された。
+[太陽ヴェサイカ](Deep-Core/4D-C_Extension)
 
 ---
 ### Core Logic: 
